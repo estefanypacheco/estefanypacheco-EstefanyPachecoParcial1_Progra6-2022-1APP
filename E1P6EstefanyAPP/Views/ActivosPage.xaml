@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E1P6EstefanyAPP.Views.ActivosPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <FlexLayout  WidthRequest="50" HeightRequest="50" HorizontalOptions="Center">
+
+                <Image Scale="1.6" Source="user.png" />
+
+            </FlexLayout>
+
+            <Entry x:Name="TxtName" Placeholder="Nombre Activo" TextTransform="Lowercase" FontSize="Large" TextColor="Black" />
+
+            <Entry x:Name="TxtSerie" Placeholder="Numero de Serie" TextTransform="Lowercase" FontSize="Large" TextColor="White" />
+
+            <Entry x:Name="TxtPrecio" Placeholder="Precio" TextTransform="Lowercase" FontSize="Large" TextColor="White" />
+            
+            <Entry x:Name="TxtdDescripcion" Placeholder="Descripcion" TextTransform="Lowercase" FontSize="Large" TextColor="White" />
+
+            <Entry x:Name="TxtUbicacion" Placeholder="Ubicacion" TextTransform="Lowercase" FontSize="Large" TextColor="White" />
+
+            <Entry x:Name="TxtResponsable" Placeholder="Responsable" TextTransform="Lowercase" FontSize="Large" TextColor="White" />
+
+            <Entry x:Name="TxtFecha" Placeholder="Fecha de Registro" TextTransform="Lowercase" FontSize="Large" TextColor="White" />
+
+            <Entry x:Name="TxtActivo" Placeholder="Estado de Activo" TextTransform="Lowercase" FontSize="Large" TextColor="White" />
+
+
+            <Button x:Name="BtnGuardar" VerticalOptions="Center" Text="Guardar"  FontSize="Large" CornerRadius="20" TextColor="White" BackgroundColor="blue" BorderColor="White" BorderWidth="1"/>
+
+            <Button x:Name="BtnCancelar" VerticalOptions="Center" Text="Cancelar"  FontSize="Large" CornerRadius="20" TextColor="White" BackgroundColor="blue" BorderColor="White" BorderWidth="1" Clicked="CmdVolverARegistro"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
